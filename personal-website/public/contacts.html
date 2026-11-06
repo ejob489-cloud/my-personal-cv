@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact information and a form to compose an email message.">
+  <title>Contacts · Myfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap header-inner">
+    <a class="wordmark" href="index.html" aria-label="Myfolio home">myfolio<span>.</span></a>
+    <nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="experience.html">Personal experience</a><a href="contacts.html" aria-current="page">Contacts</a><a href="hobbies.html">Hobbies</a></nav>
+  </div></header>
+  <div class="name-strip"><div class="wrap name-track"><p class="moving-name">JOB ELIJAH</p></div></div>
+  <main id="main" class="wrap">
+    <div class="page-intro"><p class="eyebrow">Good conversations start here</p><span class="page-number">03 / CONTACTS</span></div>
+    <div class="content-header"><h1>Let's keep in touch.</h1><p class="lead">Have a question, an idea, or just want to say hello? I'd love to hear from you.</p></div>
+    <div class="contact-layout">
+      <section class="contact-info" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Find me here</h2>
+        <div class="contact-item">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 6 8-6"/></svg></span>
+          <div><p class="contact-label">Email address</p><p>ejob489@gmail.com</p></div>
+        </div>
+        <div class="contact-item">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3h4l2 5-3 2c2 3 3 4 6 6l2-3 5 2v4a2 2 0 0 1-2 2C9 20 4 15 3 5a2 2 0 0 1 2-2Z"/></svg></span>
+          <div><p class="contact-label">Phone number</p><p>0757005868</p></div>
+        </div>
+        <div class="contact-item">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><p class="contact-label">Location</p><p>Kisii County</p></div>
+        </div>
+        <a class="button button-light contact-mail" href="mailto:ejob489@gmail.com">Email me <span class="arrow" aria-hidden="true">↗</span></a>
+      </section>
+      <section class="contact-form-area" aria-labelledby="message-heading">
+        <!-- Horizontal rule after the contact information, as required. -->
+        <hr>
+        <h2 id="message-heading">Leave a little note.</h2>
+        <p>Fill in your details and compose a message below.</p>
+        <!-- Native HTML mailto form: an installed/configured email application is required.
+             The checkbox adds a copy request to the message; it does not send a copy automatically. -->
+        <form class="contact-form" action="mailto:ejob489@gmail.com" method="post" enctype="text/plain">
+          <div class="field-pair">
+            <div class="field"><label for="sender-name">Enter your Name</label><input id="sender-name" name="Name" type="text" placeholder="Your name" autocomplete="name" required maxlength="100"></div>
+            <div class="field"><label for="sender-email">E-mail address</label><input id="sender-email" name="Email" type="email" placeholder="you@example.com" autocomplete="email" required maxlength="254"></div>
+          </div>
+          <div class="field"><label for="message-subject">Message Subject</label><input id="message-subject" name="Subject" type="text" placeholder="What would you like to talk about?" required maxlength="200"></div>
+          <div class="field"><label for="message">Enter your Message</label><textarea id="message" name="Message" placeholder="Write your message here…" rows="6" required maxlength="5000"></textarea></div>
+          <label class="checkbox-row" for="email-copy"><input id="email-copy" name="Email a copy to the sender" type="checkbox" value="Requested"><span>E-mail a copy of this message to your own address.</span></label>
+          <button class="button" type="submit">Send <span class="arrow" aria-hidden="true">↗</span></button>
+          <p class="form-note">Send opens your email application; it does not send automatically. The checkbox includes a copy request in the draft.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap">
+    <div class="footer-main"><a class="wordmark footer-wordmark" href="index.html">myfolio<span>.</span></a><nav class="nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="experience.html">Personal experience</a><a href="contacts.html" aria-current="page">Contacts</a><a href="hobbies.html">Hobbies</a></nav></div>
+    <div class="footer-base"><p class="copyright">© 2026 JOB ELIJAH. All rights reserved.</p><p class="footer-note">Made with curiosity, HTML &amp; CSS.</p></div>
+  </div></footer>
+</body>
+</html>
